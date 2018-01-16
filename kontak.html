@@ -12,12 +12,15 @@
   <body>
     <header>
       <div class="header-img">
-        <img src="assets/images/header-back.jpg" alt="">
+        <img src="assets/images/contact-header.jpg" alt="">
         <div class="overlay">
-          <h1>Terus Berkembang Menciptakan Mahakarya Dalam Bentuk Software</h1>
-          <a class="overlay-btn" href="galeri/index.html">
-            <h3>Kunjungi Galeri</h3> <i class="fa fa-angle-right fa-2x"></i>
-          </a>
+          <form action="index.html" method="post">
+            <h1>Daftarkan Email-mu Untuk Mendapatkan Kabar Terbaru Kami</h1>
+            <div class="row">
+              <input class="subscribe-email" type="email" name="EMAIL" placeholder="Email Anda...">
+              <button class="subscribe-btn" type="submit" name="subscribe">Berlangganan</button>
+            </div>
+          </form>
         </div>
       </div>
       <div class="navbar-container">
@@ -45,7 +48,26 @@
     </header>
 
     <section>
-
+      <div class="container">
+        <div class="row align-top">
+          <div class="col-6">
+            <p><strong>Alamat:</strong></p>
+            <p>Jl. Cheri No. 13, Ciputat Timur<br>
+              15412 - Banten, Indonesia</p>
+            <p><strong>Email:</strong> <a href="mailto:support@bluesoft.com">support@bluesoft.com</a></p>
+            <p><strong>Telepon:</strong> 021-21334567</p>
+          </div>
+          <div class="col-6">
+            <h1>Jangan Malu-Malu Untuk Menghubungi Kami</h1>
+            <form action="index.html" method="post...">
+              <input type="text" name="NAME" placeholder="Nama Anda..."><br>
+              <input type="email" name="EMAIL" placeholder="Email Anda..."><br>
+              <textarea name="MESSAGE" rows="4" placeholder="Pesan Anda..."></textarea>
+              <button type="submit" name="submit-msg">KIRIM PESAN <i class="fa fa-send"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer>

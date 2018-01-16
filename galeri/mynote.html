@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyNote | BlueSoft Tech</title>
+    <link rel="stylesheet" href="../assets/css/main-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bitter|PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../assets/dependencies/jquery-3.2.1.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="navbar-spacer"></div>
+      <div class="navbar-container">
+        <nav>
+          <a class="logo" href="../index.html">
+            <img src="../assets/images/BlueSoft-logo-small.png" alt="">
+          </a>
+            <ul class="navbar-list">
+              <li class="navbar-item"><a href="../index.html">Home</a></li>
+              <li class="navbar-item"><a href="../profil.html">Tentang Kami</a></li>
+              <li class="navbar-item is-active"><a href="index.html">Galeri</a></li>
+              <li class="navbar-item"><a href="../kontak.html">Kontak</a></li>
+              <li class="navbar-dropdown"><a href="javascript:void(0);" onclick="dropdownClick()"><i class="fa fa-navicon"></i></a></li>
+            </ul>
+        </nav>
+        <div id="mobileMenu" class="mobile-menu">
+          <ul class="navbar-list mobile">
+            <li class="navbar-item"><a href="../index.html">Home</a></li>
+            <li class="navbar-item"><a href="../profil.html">Tentang Kami</a></li>
+            <li class="navbar-item is-active"><a href="index.html">Galeri</a></li>
+            <li class="navbar-item"><a href="../kontak.html">Kontak</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="container">
+        <div class="app-header">
+          <img class="app-icon" src="../assets/images/galeri/mynote-icon.png" alt="">
+          <h1 class="app-title">MyNote</h1>
+        </div>
+        <div class="row align-top">
+          <div class="col-7 app-desc">
+            <p class="align-center"><strong>DESKRIPSI</strong></p>
+            <p>Aplikasi catatan sedehana yang dapat membantumu dalam aktivitas kerjamu. Organisasikan pekerjaanmu dengan lebih baik dan manfaatkan fitur-fitur di dalamnya untuk mempermudah pekerjaanmu. Terhubung dengan berbagai macam perangkat melalui fitur sinkronisasi dan penyimpanan berbasis <i>cloud</i> agar kamu tidak kehilangan pekerjaanmu. Selain mencatat dalam bentuk teks, kamu juga dapat menambahkan gambar atau ilustrasi ke dalam catatanmu dengan cukup mudah.</p>
+            <p class="align-center"><strong>TENTANG APLIKASI INI</strong></p>
+            <p>MyNote merupakan aplikasi catatan yang multifungsi dan <i>cross-platform</i>, tersedia pada perangkat komputer, android, dan iOS. Keunggulan MyNote yaitu pengoperasian yang sederhana sehingga kamu dapat mencatat memo dengan cepat dan mudah, serta adanya fitur sinkronisasi dan penyimpanan berbasis <i>cloud</i> untuk menjaga agar pekerjaanmu tidak hilang. Selain mencatat memo, MyNote juga dapat difungsikan untuk mencatat agenda, daftar kegiatan, maupun sebagai pengingat untuk kegiatan-kegiatan penting.</p>
+            <p>Fitur:</p>
+            <ul>
+              <li>Tersedia untuk berbagai jenis perangkat</li>
+              <li>Membuat dan mengatur catatan dengan mudah</li>
+              <li>Buat catatanmu lebih menarik dengan menambahkan gambar atau ilustrasi</li>
+              <li>Sinkronisasi dan penympanan berbasis <i>cloud</i></li>
+              <li>Memo daftar</li>
+              <li>Alarm pengingat</li>
+            </ul>
+          </div>
+          <div class="col-5 app-info">
+            <p><strong>Informasi Teknis</strong></p>
+            <p>
+              <strong>Tanggal Rilis:</strong> 10 Januari 2017
+              <br><br>
+              <strong>Jenis Aplikasi:</strong> Utilitas
+              <br><br>
+              <strong>Platform:</strong> PC, Android, iOS
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="row">
+        <div class="col-6 subscribe-box align-center">
+          <form action="index.html" method="post">
+            <h2>Pantau Terus Perkembangan Kami</h2>
+            <div class="row">
+              <input class="subscribe-email" type="email" name="EMAIL" placeholder="Email Anda...">
+              <button class="subscribe-btn" type="submit" name="subscribe">Berlangganan</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-6 community-box align-center">
+          <h2>Terhubung Dengan Komunitas</h2>
+          <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square"></i></a>
+          <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter-square"></i></a>
+          <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube-play"></i></a>
+        </div>
+      </div>
+      <p class="copyright align-center">Copyright <i class="fa fa-copyright"></i> BlueSoft Tech 2017</p>
+    </footer>
+
+    <script src="../assets/js/web-components.js"></script>
+  </body>
+</html>

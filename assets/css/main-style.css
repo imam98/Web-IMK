@@ -5,6 +5,7 @@
 }
 
 body {
+  background: #1e1e1e;
   margin: 0;
 }
 
@@ -44,6 +45,39 @@ a:hover {
   color: #2388F0;
 }
 
+input, textarea {
+  margin: 10px 0;
+  padding: 4px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  width: 100%;
+  height: 34px;
+}
+
+textarea {
+  resize: none;
+  height: inherit;
+}
+
+button {
+  background: #2388F0;
+  color: #fff;
+  border: 0;
+  font-size: 12px;
+  font-weight: 600;
+  height: 34px;
+  transition: background .3s;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #000;
+}
+
+ul {
+  font-family: 'PT Sans', sans-serif;
+}
+
 .header-img {
   position: relative;
   width: 100%;
@@ -62,6 +96,7 @@ a:hover {
 }
 
 .container {
+  background: #fff;
   padding: 2% 6%;
   width: 100%;
 }
@@ -103,11 +138,7 @@ a:hover {
 .subscribe-email {
   display: inline-block;
   margin: 0;
-  padding: 4px;
-  font-family: 'PT Sans', sans-serif;
-  font-size: 14px;
   width: 70%;
-  height: 34px;
 }
 
 .subscribe-btn {
@@ -115,17 +146,13 @@ a:hover {
   background: #d3d3d3;
   color: #000;
   margin: 0;
-  border: 0;
-  font-size: 12px;
+  font-weight: 400;
   width: 30%;
   min-width: 85px;
-  height: 34px;
-  transition: background .3s;
 }
 
 .subscribe-btn:hover {
   background: #a1a1a1;
-  cursor: pointer;
 }
 
 .subscribe-box {
@@ -141,9 +168,70 @@ a:hover {
   text-align: center;
 }
 
+.align-top {
+  align-items: flex-start;
+}
+
+.app-desc {
+  padding-right: 16px;
+}
+
+.app-info {
+  color: #68625e;
+  padding-left: 16px;
+}
+
+.unslider-nav {
+  width: 100%;
+  position: absolute;
+  top: 475px;
+  z-index: 98;
+}
+
+.unslider-arrow {
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
+  color: #aaa;
+  padding: 0 8px;
+  position: absolute;
+  top: 0;
+  font-size: 72px;
+  height: 500px;
+  line-height: 500px;
+}
+
+.gallery-card {
+  margin: 8px;
+  width: 240px;
+  border: 1px solid #8e8e8e;
+  text-decoration: none;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+}
+
+.app-icon {
+  width: 64px;
+  height: 64px;
+}
+
+.app-title {
+  flex-grow: 1;
+  margin: 0;
+  margin-left: 8px;
+}
+
+.profile-display {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+
 /* ################## Navigation Bar ##################### */
 
-nav {
+.navbar-container nav {
   display: flex;
   background: rgba(0, 0, 0, 0.85);
   margin: 0;
@@ -193,7 +281,7 @@ nav {
   float: left;
 }
 
-.navbar-item a:hover, .navbar-dropdown a:hover {
+.navbar-item a:hover, .navbar-dropdown a:active {
   background: #2388F0;
   color: #fff;
 }
@@ -232,6 +320,12 @@ ul.navbar-list.mobile .navbar-item {
 
 ul.navbar-list.mobile .navbar-item a {
   width: 100%;
+}
+
+.navbar-spacer {
+  background: #000;
+  width: 100%;
+  height: 65px;
 }
 
 /* #################### Custom Styles ###################### */
@@ -287,6 +381,66 @@ footer .community-box a {
   vertical-align: sub;
 }
 
+.slide-container ul {
+  list-style: none;
+}
+
+.unslider-nav {
+  list-style: none;
+  text-align: center;
+}
+
+.unslider-nav ol li {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.5);
+  color: #aaa;
+  margin: 0 4px;
+  padding: 2px 8px;
+  font-family: 'Bitter', serif;
+  border-radius: 7px;
+  cursor: pointer;
+  transition-property: background, color;
+  transition-duration: 0.5s;
+}
+
+.unslider-nav ol li:hover {
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+}
+
+.unslider-nav ol li.unslider-active {
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+}
+
+.unslider-arrow:active {
+  padding: 0 12px;
+}
+
+.gallery-card:hover {
+  color: #000;
+}
+
+.gallery-card header {
+  margin: 8px 0;
+  padding: 0 8px;
+}
+
+.gallery-card .content {
+  background: #e2e2e2;
+  margin: 0;
+  padding: 4px 8px 8px;
+  width: 100%;
+}
+
+.profile-display.align-right {
+  padding-right: 0;
+}
+
+.profile-display.align-left {
+  padding-left: 0;
+}
+
 /* #################### Mobile View ###################### */
 
 @media screen and (max-width: 797px) {
@@ -333,6 +487,26 @@ footer .community-box a {
     margin-top: 4px;
     text-align: left;
   }
+
+  .unslider-nav ol {
+    display: none;
+  }
+
+  .unslider-arrow {
+    display: block;
+  }
+
+  .profile-display.align-right {
+    padding: 20px 0;
+  }
+
+  .profile-display.align-left {
+    padding: 20px 0;
+  }
+
+  .app-info {
+    padding-left: 0;
+  }
 }
 
 @media screen and (min-width: 681px) and (max-width: 764px) {
@@ -342,6 +516,12 @@ footer .community-box a {
 }
 
 /* ##################### Small Screen ################## */
+
+@media screen and (max-width: 581px) {
+  .gallery-card {
+    width: 100%;
+  }
+}
 
 @media screen and (max-width: 477px) {
   .header-img .overlay {
@@ -353,8 +533,17 @@ footer .community-box a {
     text-align: center;
   }
 
+  .overlay .subscribe-email {
+    margin: auto;
+    width: 95%;
+  }
+
   .subscribe-btn {
     margin: auto;
     width: 50%;
+  }
+
+  .unslider-arrow {
+    display: none;
   }
 }

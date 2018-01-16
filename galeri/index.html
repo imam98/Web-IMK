@@ -5,20 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeri | BlueSoft Tech</title>
     <link rel="stylesheet" href="../assets/css/main-style.css">
+    <link rel="stylesheet" href="../assets/css/unslider.css">
     <link href="https://fonts.googleapis.com/css?family=Bitter|PT+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="../assets/dependencies/jquery-3.2.1.min.js"></script>
   </head>
   <body>
     <header>
-      <div class="header-img">
-        <img src="../assets/images/header-back.jpg" alt="">
-        <div class="overlay">
-          <h1>Terus Berkembang Menciptakan Mahakarya Dalam Bentuk Software</h1>
-          <a class="overlay-btn" href="index.html">
-            <h3>Kunjungi Galeri</h3> <i class="fa fa-angle-right fa-2x"></i>
-          </a>
-        </div>
+      <div class="slider-container">
+        <ul>
+          <li data-nav="The Mist of Bonnevia">
+            <div class="header-img">
+              <img src="../assets/images/galeri/slider/slider-1.jpg" alt="">
+              <div class="overlay">
+                <h1>Ungkap Misteri Yang Tersembunyi Di Balik Tebalnya Kabut</h1>
+              </div>
+            </div>
+          </li>
+          <li data-nav="MyNote">
+            <div class="header-img">
+              <img src="../assets/images/galeri/slider/slider-2.jpg" alt="">
+              <div class="overlay">
+                <h1>Permudah Aktivitas Kerjamu Dengan MyNote</h1>
+              </div>
+            </div>
+          </li>
+          <li data-nav="Petualangan Icarus">
+            <div class="header-img">
+              <img src="../assets/images/galeri/slider/slider-3.jpg" alt="">
+              <div class="overlay">
+                <h1>Bergabunglah Dengan Icarus Dalam Petualangan Terhebat Sepanjang Masa</h1>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
       <div class="navbar-container">
         <nav>
@@ -45,7 +65,35 @@
     </header>
 
     <section>
-
+      <div class="container">
+        <h1>Tiap Software Merupakan Sebuah Mahakarya</h1>
+        <hr>
+        <section>
+          <div class="row">
+            <a class="gallery-card" href="the-mist-of-bonnevia.html">
+              <header class="app-header">
+                <img class="app-icon" src="../assets/images/galeri/tmob-icon.png" alt="">
+                <h1 class="app-title">The Mist of Bonnevia</h1>
+              </header>
+              <p class="content">Sebuah kota kecil di pedalaman belantara, di mana matahari jarang bersinar. Konon katanya, ketika kabut lebat turun, hal yang buruk datang bersamanya. Tak ada satupun warga yang berani keluar ketika...</p>
+            </a>
+            <a class="gallery-card" href="mynote.html">
+              <header class="app-header">
+                <img class="app-icon" src="../assets/images/galeri/mynote-icon.png" alt="">
+                <h1 class="app-title">MyNote</h1>
+              </header>
+              <p class="content">Aplikasi catatan sederhana yang dapat membantumu dalam aktivitas kerjamu. Organisasikan pekerjaanmu dengan lebih baik dan manfaatkan fitur-fitur di dalamnya untuk mempermudah pekerjaanmu...</p>
+            </a>
+            <a class="gallery-card" href="petualangan-icarus.html">
+              <header class="app-header">
+                <img class="app-icon" src="../assets/images/galeri/icarus-icon.png" alt="">
+                <h1 class="app-title">Petualangan Icarus</h1>
+              </header>
+              <p class="content">Pada zaman dahulu kala, seorang ksatria tangguh, Argus, melakukan perjalanan panjang menuju ke Dataran Arkh dan menaklukan raja kegelapan, Deimos, menyegelnya untuk selama-lamanya. Akan tetapi...</p>
+            </a>
+          </div>
+        </section>
+      </div>
     </section>
 
     <footer>
@@ -70,6 +118,12 @@
       <p class="copyright align-center">Copyright <i class="fa fa-copyright"></i> BlueSoft Tech 2017</p>
     </footer>
 
+    <script src="../assets/dependencies/unslider-min.js"></script>
+    <script src="http://stephband.info/jquery.event.move/js/jquery.event.move.js"></script>
+    <script src="http://stephband.info/jquery.event.swipe/js/jquery.event.swipe.js"></script>
     <script src="../assets/js/web-components.js"></script>
+    <script type="text/javascript">
+      sliderInit();
+    </script>
   </body>
 </html>
